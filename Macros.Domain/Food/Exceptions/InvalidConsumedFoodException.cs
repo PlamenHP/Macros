@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Macros.Domain.Exceptions;
+﻿using Macros.Domain.Exceptions;
 
 namespace Macros.Domian.Food.Exceptions
 {
-    public class InvalidConsumedFoodException : BaseDomainException
+    public class InvalidConsumedFoodListException : BaseDomainException
     {
-        public InvalidConsumedFoodException()
+        public InvalidConsumedFoodListException()
         {
         }
 
-        public InvalidConsumedFoodException(string error) => this.Error = error;
+        public InvalidConsumedFoodListException(string error) => this.Error = error;
     }
 }

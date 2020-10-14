@@ -3,9 +3,9 @@ using Macros.Domian.Food.Models.Diet;
 
 namespace Macros.Domian.Food.Factories.Diet
 {
-    public interface IConsumedFoodFactory : IFactory<ConsumedFood>
+    public interface IConsumedFoodListFactory : IFactory<ConsumedFoodList>
     {
-        IConsumedFoodFactory WithUser(string user);
-        IConsumedFoodFactory WithName(string name);
+        IConsumedFoodListFactory WithUser(string user);
+        IConsumedFoodListFactory WithName(string name);
     }
 }

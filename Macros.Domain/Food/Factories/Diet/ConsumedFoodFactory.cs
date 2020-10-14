@@ -1,31 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Macros.Domian.Food.Exceptions;
 using Macros.Domian.Food.Models.Diet;
 
 namespace Macros.Domian.Food.Factories.Diet
 {
-    internal class ConsumedFoodFactory : IConsumedFoodFactory
+    internal class ConsumedFoodListFactory : IConsumedFoodListFactory
     { 
-        private string user = default;
+        private string user = default!;
+        private string name = default!;
 
-        private string name = default;
+        private bool userSet = false;
 
-        public IConsumedFoodFactory WithName(string name)
+        public IConsumedFoodListFactory WithUser(string user)
         {
-            throw new NotImplementedException();
+            this.user = user;
+            this.userSet = true;
+            return this;
         }
 
-        public IConsumedFoodFactory WithUser(string user)
+        public IConsumedFoodListFactory WithName(string name)
         {
-            throw new NotImplementedException();
+            this.name = name;
+            return this;
         }
-        public ConsumedFood Build()
+
+        public ConsumedFoodList Build()
         {
-            if (true)
+            if (!this.userSet)
             {
-
+                throw new InvalidConsumedFoodListException("User must have a value.");
             }
+
+            return new ConsumedFoodList(this.user, this.name);
         }
     }
 }

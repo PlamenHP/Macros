@@ -1,5 +1,4 @@
-﻿using System;
-using Macros.Domain.Common;
+﻿using Macros.Domain.Common;
 using Macros.Domian.Food.Exceptions;
 using Macros.Domian.Food.Models.Menu;
 using static Macros.Domian.Food.Models.ModelConstants.Common;

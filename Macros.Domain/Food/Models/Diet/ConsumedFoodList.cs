@@ -6,11 +6,11 @@ using static Macros.Domian.Food.Models.ModelConstants.Common;
 
 namespace Macros.Domian.Food.Models.Diet
 {
-    public class ConsumedFood : Entity<int>, IAggregateRoot
+    public class ConsumedFoodList : Entity<int>, IAggregateRoot
     {
         private readonly HashSet<Nutrient> foods;
 
-        internal ConsumedFood( string user, string name = "The get to {0}% bodyfat diet list")
+        internal ConsumedFoodList( string user, string name = "The get to {0}% bodyfat diet list")
         {
             this.Validate(user);
             this.User = user;
@@ -35,7 +35,7 @@ namespace Macros.Domian.Food.Models.Diet
         public void AddFood(Nutrient nutrient) => this.foods.Add(nutrient);
 
         private void Validate(string name)
-            => Guard.ForStringLength<InvalidConsumedFoodException>(
+            => Guard.ForStringLength<InvalidConsumedFoodListException>(
                 name,
                 MinNameLength,
                 MaxNameLength,
