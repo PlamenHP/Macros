@@ -1,7 +1,7 @@
-﻿using Macros.Domian.Food.Exceptions;
-using Macros.Domian.Food.Models.Menu;
+﻿using Macros.Domain.Food.Exceptions;
+using Macros.Domain.Food.Models.Menu;
 
-namespace Macros.Domian.Food.Factories.Menu
+namespace Macros.Domain.Food.Factories.Menu
 {
     public class FoodListFactory : IFoodListFactory
     {

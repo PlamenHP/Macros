@@ -1,7 +1,7 @@
-﻿using Macros.Domian.Common;
-using Macros.Domian.Food.Models.Diet;
+﻿using Macros.Domain.Common;
+using Macros.Domain.Food.Models.Diet;
 
-namespace Macros.Domian.Food.Factories.Diet
+namespace Macros.Domain.Food.Factories.Diet
 {
     public interface IConsumedFoodListFactory : IFactory<ConsumedFoodList>
     {

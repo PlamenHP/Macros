@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Macros.Domain.Common;
-using Macros.Domian.Food.Exceptions;
-using static Macros.Domian.Food.Models.ModelConstants.Common;
+using Macros.Domain.Food.Exceptions;
+using static Macros.Domain.Food.Models.ModelConstants.Common;
 
-namespace Macros.Domian.Food.Models.Diet
+namespace Macros.Domain.Food.Models.Diet
 {
     public class ConsumedFoodList : Entity<int>, IAggregateRoot
     {

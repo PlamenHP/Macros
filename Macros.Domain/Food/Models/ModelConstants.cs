@@ -1,4 +1,4 @@
-﻿namespace Macros.Domian.Food.Models
+﻿namespace Macros.Domain.Food.Models
 {
     public class ModelConstants
     {

@@ -1,6 +1,6 @@
 ﻿using Macros.Domain.Common;
 
-namespace Macros.Domian.Common
+namespace Macros.Domain.Common
 {
     public interface IFactory<out TEntity>
         where TEntity : IAggregateRoot

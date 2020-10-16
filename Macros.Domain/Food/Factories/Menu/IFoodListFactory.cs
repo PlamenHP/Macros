@@ -1,8 +1,7 @@
-﻿using Macros.Domain.Food.Models.Menu;
-using Macros.Domian.Common;
-using Macros.Domian.Food.Models.Menu;
+﻿using Macros.Domain.Common;
+using Macros.Domain.Food.Models.Menu;
 
-namespace Macros.Domian.Food.Factories.Menu
+namespace Macros.Domain.Food.Factories.Menu
 {
     public interface IFoodListFactory : IFactory<FoodList>
     {

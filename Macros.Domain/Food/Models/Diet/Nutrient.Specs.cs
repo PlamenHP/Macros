@@ -1,9 +1,9 @@
 ﻿using System;
 using FluentAssertions;
-using Macros.Domian.Food.Exceptions;
+using Macros.Domain.Food.Exceptions;
 using Xunit;
 
-namespace Macros.Domian.Food.Models.Diet
+namespace Macros.Domain.Food.Models.Diet
 {
     public class NutrientSpec
     {

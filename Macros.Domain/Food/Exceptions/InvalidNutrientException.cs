@@ -1,6 +1,6 @@
 ﻿using Macros.Domain.Exceptions;
 
-namespace Macros.Domian.Food.Exceptions
+namespace Macros.Domain.Food.Exceptions
 {
     public class InvalidNutrientException : BaseDomainException
     {

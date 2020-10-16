@@ -1,7 +1,7 @@
 ﻿using System;
 using FakeItEasy;
 
-namespace Macros.Domian.Food.Models.Diet
+namespace Macros.Domain.Food.Models.Diet
 {
     public class ConsumedFoodListFakes
     {

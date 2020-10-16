@@ -1,9 +1,10 @@
 ﻿using System;
+using FakeItEasy;
 using FluentAssertions;
-using Macros.Domian.Food.Exceptions;
+using Macros.Domain.Food.Exceptions;
 using Xunit;
 
-namespace Macros.Domian.Food.Models.Diet
+namespace Macros.Domain.Food.Models.Diet
 {
     public class ConsumedFoodListSpec
     {
@@ -11,7 +12,7 @@ namespace Macros.Domian.Food.Models.Diet
         public void ConsumedFoodList_InvalidName_ThrowException()
         {
             // Act
-            Action act = () => new ConsumedFoodList("");
+            Action act = () => A.Dummy<ConsumedFoodList>();
 
             // Assert
             act.Should().Throw<InvalidConsumedFoodListException>($"Instantiating {nameof(ConsumedFoodList)} should thorow exception for invalid name.");
@@ -21,7 +22,7 @@ namespace Macros.Domian.Food.Models.Diet
         public void ConsumedFoodList_ValidName_NotThrowException()
         {
             // Act
-            Action act = () => new ConsumedFoodList("My new Diet record");
+            Action act = () => A.Dummy<ConsumedFoodList>();
 
             // Assert
             act.Should().NotThrow<InvalidConsumedFoodListException>($"Instantiating {nameof(ConsumedFoodList)} should not thorow exception for valid name.");
@@ -31,7 +32,7 @@ namespace Macros.Domian.Food.Models.Diet
         public void ConsumedFoodList_UpdateName_UpdatesConsumedFoodListName()
         {
             // Arrange
-            var systemUnderTest = new ConsumedFoodList("My new Diet record");
+            var systemUnderTest = A.Dummy<ConsumedFoodList>();
             string newName = "My updated diet record name";
 
             // Act

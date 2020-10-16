@@ -1,10 +1,10 @@
 ﻿using System;
 using Macros.Domain.Common;
-using Macros.Domian.Food.Exceptions;
-using static Macros.Domian.Food.Models.ModelConstants.Common;
-using static Macros.Domian.Food.Models.ModelConstants.Nutrient;
+using Macros.Domain.Food.Exceptions;
+using static Macros.Domain.Food.Models.ModelConstants.Common;
+using static Macros.Domain.Food.Models.ModelConstants.Nutrient;
 
-namespace Macros.Domian.Food.Models.Diet
+namespace Macros.Domain.Food.Models.Diet
 {
     public class Nutrient : Entity<int>
     {

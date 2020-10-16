@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Macros.Domain.Common;
-using Macros.Domain.Food.Models.Menu;
-using Macros.Domian.Food.Exceptions;
-using static Macros.Domian.Food.Models.ModelConstants.Common;
+using Macros.Domain.Food.Exceptions;
+using static Macros.Domain.Food.Models.ModelConstants.Common;
 
-namespace Macros.Domian.Food.Models.Menu
+namespace Macros.Domain.Food.Models.Menu
 {
     public class FoodList : Entity<int>, IAggregateRoot
     {

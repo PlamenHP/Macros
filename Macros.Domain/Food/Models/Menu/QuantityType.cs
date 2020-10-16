@@ -1,6 +1,6 @@
 ﻿using Macros.Domain.Common;
 
-namespace Macros.Domian.Food.Models.Menu
+namespace Macros.Domain.Food.Models.Menu
 {
     public class QuantityType : Enumeration
     {

@@ -1,7 +1,7 @@
-﻿using Macros.Domian.Food.Exceptions;
-using Macros.Domian.Food.Models.Diet;
+﻿using Macros.Domain.Food.Exceptions;
+using Macros.Domain.Food.Models.Diet;
 
-namespace Macros.Domian.Food.Factories.Diet
+namespace Macros.Domain.Food.Factories.Diet
 {
     internal class ConsumedFoodListFactory : IConsumedFoodListFactory
     { 

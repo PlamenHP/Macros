@@ -1,6 +1,6 @@
 ﻿using System;
 using Macros.Domain.Exceptions;
-using Macros.Domian.Food.Models;
+using Macros.Domain.Food.Models;
 
 namespace Macros.Domain.Common
 {
