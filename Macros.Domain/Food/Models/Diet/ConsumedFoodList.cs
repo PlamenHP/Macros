@@ -21,6 +21,13 @@ namespace Macros.Domain.Food.Models.Diet
             this.foods = new HashSet<Nutrient>();
         }
 
+        private ConsumedFoodList(string user)
+        {
+            this.User = user;
+            this.Name = default!;
+            this.foods = default!;
+        }
+
         public string User { get; private set; }
 
         public string Name { get; private set; }

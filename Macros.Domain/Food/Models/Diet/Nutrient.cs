@@ -16,7 +16,14 @@ namespace Macros.Domain.Food.Models.Diet
             this.Name = name;
             this.Quantity = quantity;
             this.ConsumptionTime = consumptionTime;
-        }      
+        }
+
+        private Nutrient(string name, double quantity)
+        {
+            this.Name = name;
+            this.Quantity = quantity;
+            this.ConsumptionTime = default!;
+        }
 
         public string Name { get; }
 

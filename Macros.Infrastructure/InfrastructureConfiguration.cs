@@ -1,5 +1,5 @@
-﻿using Macros.Infrastructure.Diet.Persistance;
-using Macros.Infrastructure.Menu.Persistance;
+﻿using Macros.Infrastructure.Persistance.Diet;
+using Macros.Infrastructure.Persistance.Menu;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,12 +14,12 @@ namespace Macros.Infrastructure
             => services
                 .AddDbContext<DietDbContext>(options => options
                     .UseSqlServer(
-                    configuration.GetConnectionString("DietDbConnection"),
+                    configuration.GetConnectionString("DietDbConnectionString"),
                     b => b.MigrationsAssembly(
                         typeof(DietDbContext).Assembly.FullName)))
                 .AddDbContext<MenuDbContext>(options => options
                     .UseSqlServer(
-                    configuration.GetConnectionString("MenuDbConnection"),
+                    configuration.GetConnectionString("MenuDbConnectionString"),
                     b => b.MigrationsAssembly(
                         typeof(MenuDbContext).Assembly.FullName)));
 

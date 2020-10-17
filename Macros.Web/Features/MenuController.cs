@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Macros.Web.Features
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class MenuController : ControllerBase
+    public class MenuController : ApiController
     {
-        //private static readonly FoodList foodList = new FoodList();
-
         [HttpGet]
-        public FoodList Get() => new FoodListFactory().WithCreator("Foo").Build();
+        public FoodList GetList() => null!;
+
+        [HttpPost]
+        public FoodList CreateList([FromBody] string name, string creator) => 
+            new FoodListFactory().WithName(name).WithCreator(creator).Build();
     }
 }
