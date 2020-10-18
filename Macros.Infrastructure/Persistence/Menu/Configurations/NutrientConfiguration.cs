@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using static Macros.Domain.Food.Models.ModelConstants.Common;
 
-namespace Macros.Infrastructure.Persistance.Menu.Configurations
+namespace Macros.Infrastructure.Persistence.Menu.Configurations
 {
     internal class NutrientConfiguration
     {

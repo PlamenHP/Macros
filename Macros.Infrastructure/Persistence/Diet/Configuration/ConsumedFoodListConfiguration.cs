@@ -1,24 +1,24 @@
-﻿using Macros.Domain.Food.Models.Menu;
+﻿using Macros.Domain.Food.Models.Diet;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using static Macros.Domain.Food.Models.ModelConstants.Common;
 
-namespace Macros.Infrastructure.Persistance.Menu.Configurations
+namespace Macros.Infrastructure.Persistence.Diet.Configuration
 {
-    internal class FoodListConfiguration
+    internal class ConsumedFoodListConfiguration
     {
-        public void Configure(EntityTypeBuilder<FoodList> builder)
+        public void Configure(EntityTypeBuilder<ConsumedFoodList> builder)
         {
             builder
                 .HasKey(f => f.Id);
 
             builder
-                .Property(f => f.Name)
+                .Property(f => f.User)
                 .IsRequired()
                 .HasMaxLength(MaxNameLength);
 
             builder
-                .Property(f => f.Creator)
+                .Property(f => f.Name)
                 .HasMaxLength(MaxNameLength);
 
             builder

@@ -2,14 +2,14 @@
 using Macros.Domain.Food.Models.Menu;
 using Microsoft.EntityFrameworkCore;
 
-namespace Macros.Infrastructure.Persistance.Menu
+namespace Macros.Infrastructure.Persistence.Menu
 {
     internal class MenuDbContext : DbContext
     {
+        // Add-Migration InitialDomainTables -OutputDir "Persistence/Menu/Migrations" -context "MenuDbContext"
         public MenuDbContext(DbContextOptions<MenuDbContext> options)
             : base(options)
         {
-
         }
 
         public DbSet<FoodList> FoodLists { get; set; } = default!;

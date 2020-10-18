@@ -25,11 +25,11 @@ namespace Macros.Domain.Food.Models.Diet
             this.ConsumptionTime = default!;
         }
 
-        public string Name { get; }
+        public string Name { get; private set; }
 
         public double Quantity { get; private set; }
 
-        public DateTime ConsumptionTime { get; }
+        public DateTime ConsumptionTime { get; private set; }
 
         public Nutrient UpdateQuantity(double quantity) 
         {

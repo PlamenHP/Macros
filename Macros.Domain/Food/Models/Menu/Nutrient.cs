@@ -24,13 +24,13 @@ namespace Macros.Domain.Food.Models.Menu
             this.Quantity = quantity;
         }
 
-        private Nutrient(string name, double fat, double carbohydrate, double protein, double salt, QuantityType quantityType, double quantity,bool isMenu=true)
+        private Nutrient(string name, double fat, double carbohydrate, double protein, double salt, double quantity)
         {
             this.Name = name;
             this.Fat = fat;
             this.Carbohydrate = carbohydrate;
             this.Salt = salt;
-            this.QuantityType = quantityType;
+            this.QuantityType = default!;
             this.Quantity = quantity;
         }
 

@@ -38,4 +38,8 @@
     <ProjectReference Include="..\Macros.Application\Macros.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Menu\Migrations\" />
+  </ItemGroup>
+
 </Project>
