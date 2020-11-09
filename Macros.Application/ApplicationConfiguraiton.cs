@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using AutoMapper;
-using Macros.Application.Behaviours;
+using Macros.Application.Common.Behaviours;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,15 +1,10 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Macros.Application.Contracts;
-using Macros.Domain.Food.Models.Diet;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Macros.Application.Diet
 {
-    public interface IDietRepository : IRepository<ConsumedFoodList>
+    class IDietRepository
     {
-        Task<ConsumedFoodList> AddNewDiet(string user, string listName = default!);
-        Task<ConsumedFoodList> GetDietInfo(int id, CancellationToken cancellationToken = default!);
-
-
     }
 }

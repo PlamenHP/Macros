@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
-using Macros.Application.Exceptions;
-using Macros.Domain.Exceptions;
+using Macros.Application.Common.Exceptions;
+using Macros.Domain.Common.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;

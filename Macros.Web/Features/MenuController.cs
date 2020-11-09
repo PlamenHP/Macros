@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using Macros.Domain.Food.Factories.Menu;
-using Macros.Domain.Food.Models.Menu;
+using Macros.Domain.Menu.Factories;
+using Macros.Domain.Menu.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Macros.Web.Features
@@ -8,10 +8,10 @@ namespace Macros.Web.Features
     public class MenuController : ApiController
     {
         [HttpGet]
-        public FoodList GetList() => null!;
+        public Food GetList() => null!;
 
         [HttpPost]
-        public FoodList CreateList([FromBody] string name, string creator) => 
-            new FoodListFactory().WithName(name).WithCreator(creator).Build();
+        public Food CreateList([FromBody] string name, string userId) => 
+            new FoodFactory().WithName(name).FromUser(userId).Build();
     }
 }

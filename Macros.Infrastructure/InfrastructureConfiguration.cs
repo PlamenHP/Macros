@@ -1,5 +1,5 @@
-﻿using Macros.Infrastructure.Persistence.Diet;
-using Macros.Infrastructure.Persistence.Menu;
+﻿using Macros.Infrastructure.Persistance.Diet;
+using Macros.Infrastructure.Persistance.Menu;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

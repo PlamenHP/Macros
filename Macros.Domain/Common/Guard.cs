@@ -1,6 +1,7 @@
 ﻿using System;
-using Macros.Domain.Exceptions;
-using Macros.Domain.Food.Models;
+using System.Linq;
+using Macros.Domain.Common.Exceptions;
+using Macros.Domain.Menu.Models;
 
 namespace Macros.Domain.Common
 {
@@ -79,7 +80,6 @@ namespace Macros.Domain.Common
 
             ThrowException<TException>($"{name} must be a valid URL.");
         }
-
 
         public static void Against<TException>(object actualValue, object unexpectedValue, string name = "Value")
             where TException : BaseDomainException, new()
